@@ -1,0 +1,161 @@
+font-face {
+    font-family: "SayaFY-Bold";
+    src: url('SayaFY-Bold.ttf')  format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    font-family: "SayaFY-Bold";
+    font-weight: 400;
+    
+}
+
+
+/************************* INPUT con el buscador de modelos **************************/
+
+.buscador-modelos{
+	position: relative;
+	width: 100%;
+	background-color: rgb(244,134,58);	
+	height: 9vh;
+}
+
+.buscador > .buscador-caja {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.buscador-modelos > .buscador > .buscador-caja > .input-busqueda {
+	position: absolute;
+	margin-top: 1%; 
+	width: 50%;
+	padding: 5px;
+	/*background-color: green;*/	
+}
+
+.input-busqueda > input {
+	font-family: "SayaFY-Bold";
+	width: 100%;
+	height: 5vh;
+	font-size: 15px;
+	font-weight: 200;
+	padding: 0 5%;
+	outline: none;
+	border: 1px solid silver;
+	border-radius: 25px;
+}
+
+
+.input-busqueda > .btn-busqueda {
+	position: absolute; 
+	display: inline-block;
+	font-size: 30px;
+	/*padding: 5px;*/
+	text-align: center;
+	width: 10%;
+	
+	right: 0;
+	top: 0;
+	line-height: 55px;
+	/*background-color: rgb(244,134,58);*/
+	/*background-color: red;*/
+	color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.titulo-1{
+	margin-top: 7vh;
+	margin-bottom: 5vh;
+	text-align: center;
+}
+
+/*********************************************************************************************/
+
+
+
+
+
+
+/******************************Buscador que muestra los objetos ******************************/
+.contenedor-objetos-buscados{
+	/*background-color: blue;*/
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+
+}
+
+.contenedor-objetos-buscados > .contenedor-objeto{
+	/*background-color: red;*/
+	height: 52vh;
+	width:29%;
+	box-shadow:0 0 7px #111 ;
+    /*margin: 2% 2%;*/
+    margin: 2% 0%;
+}
+
+.contenedor-objetos-buscados > .contenedor-objeto >.cont >img{
+	height: 30vh;
+	width: 100%;
+	
+}
+
+.informacion-nombre{
+	height: 6vh;
+}
+
+.informacion-objeto p{
+	font-size: 1rem;
+}
+
+.informacion-nombre-objeto{
+	/*background-color: red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.informacion-nombre-objeto .informacion-tamano-objeto{
+	margin-right: 5%;
+}
+
+
+/*Div que agrupa todo lo que no es la imagen*/
+.wrapper-informacion{
+	padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f0f0f0;
+    padding-top: 1%;
+    padding-bottom: 10px;
+}
+
+
+/*Div que agrupa el precio y el boton de anadir al carrito*/
+.compra-precio{
+	/*background-color: red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.compra-precio .boton-comprar .boton-texto{
+	border-radius: 10px;
+	padding-right: 5px;
+}
+
+.informacion-tamano-objeto > button {
+	padding: 5px 13px;
+}
+
+/*********************************************************************************************/

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "SayaFY-Bold";
+    src: url('SayaFY-Bold.ttf')  format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    font-family: "SayaFY-Bold";
+    font-weight: 400;
+}

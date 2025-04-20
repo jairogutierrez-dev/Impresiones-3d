@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "SayaFY-Bold";
+    src: url('SayaFY-Bold.ttf')  format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    font-family: "SayaFY-Bold";
+    font-weight: 400;
+}
+
+h3{
+	text-align: center;
+}
+h4{
+	text-align: center;
+}
+body{
+background-color: rgb(0,0,0,0.2);
+margin: 0;
+}
+
+hr{
+	color: rgb(237,172,109);
+	height: 4px;
+	background-color: rgb(237,172,109);
+
+}
+.divBuscador{
+	padding-left: 25%;
+	padding-right: 25%;
+
+}
+.divBuscador > .texto{
+	text-align: center;
+	background-color: rgb(0,0,0,0.2);
+
+}
+.tablaMateriales{
+	margin: 0 auto;
+}
+.tablaFinal{
+
+	margin: 0 auto;
+
+}
+.tablaMateriales,td,tr,th{
+	border: 1px solid black;
+	text-align: center;
+	background-color: white;
+}
+td{
+	font-weight: bold;
+}
+
+.DivImagen{
+
+	background-color: orange;
+}
+
+.DivTexto{
+
+background-color: white;
+}
+.divFinal{
+
+background-color: rgb(0,0,0,0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+.divFinal > .tablafinal,th,.td1,.td2,.td3{
+background-color: rgb(0,0,0,0.5);
+position: relative;
+
+}
+.divFinal > .tablafinal > td{
+background-color: rgb(0,0,0,0.8);
+position: relative;
+}
+.divFinal > .tablafinal > tr {
+position: relative;
+
+}
+ p{
+text-align: left;
+
+}
+ img{
+	height: 100px;
+	width: 100px;
+
+}

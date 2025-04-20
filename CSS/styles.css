@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "SayaFY-Bold";
+    src: url('SayaFY-Bold.ttf')  format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    height: 400vh;
+    font-family: "SayaFY-Bold";
+    font-weight: 400;
+}
+
+
+
+/*Cabecera que contiene logo y botones |acceder y compras| */
+nav {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+    /*Color de la cabecera donde esta situado el logo*/
+    background-color: rgba(55, 52, 63, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    /*border-bottom: 1px solid rgb(200, 169, 126);*/
+
+}
+
+
+.lista-derecha-container > .lista-derecha{
+    background-color: red;
+}
+/********** FIN Cabecera que contiene logo y botones |acceder y compras| **********/
+
+
+
+
+/* Cabecera secundaria con botones de materiales, busqueda, guia de diseño*/
+.nav-secundario{
+    height: 80px;
+    /*Colores de la cabecera secundaria*/
+    background-color: rgba(38, 37, 43, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.nav-secundario > ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.nav-secundario > ul > li {
+    display: inline-block;
+    /* padding: 15px 150px 15px 150px;*/
+
+}
+
+
+.nav-secundario > ul > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.5s;
+}
+
+
+.nav-secundario > ul > li > a:hover{
+    color: rgb(226,127,67);
+    transition: 0.4s;
+}
+/***********FIN Cabecera secundaria con botones de materiales, busqueda, guia de diseño****************/
+
+
+
+
+
+/*Cabecera LOGO */
+nav > .nav-logo{
+    height: 100%;
+}
+
+
+
+/*Imagen de la cabecera*/
+nav > .nav-logo > .nav-logoContainer{
+    height:100%;
+    width:100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/*imagen del logo dentro de la cabecera*/
+nav > .nav-logo > .nav-logoContainer > img {
+    height: 100%;
+    width: 300px;
+    margin: 0px auto;
+    display: center;
+}
+
+
+/* Div que contiene la imagen principal */
+.div-imagen{    
+    position: relative;
+    height: 65vh;
+    /*height: 550px;*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.div-imagen > img{
+
+    position: absolute;
+    margin-right: auto;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+    /*filter: grayscale(100%);*/
+    filter: brightness(40%);
+}
+
+
+.wrapper{
+
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin: 0 auto;
+    font-weight: 400;
+
+}
+
+
+/*************** FRASE DENTRO DE LA IMAGEN *******************/
+.div-imagen > .div-frase{
+    position: absolute;
+    top: 65px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+   /* background-color: red;*/
+}
+
+.div-imagen > .div-frase > .nombre-empresa{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 500;
+    margin-top: 40px;   
+}
+
+.div-imagen > .div-frase > .lema-empresa{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 30px;   
+}
+
+.div-imagen > .div-frase > .frase-imagen{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 6px;   
+}
+
+
+
+
+
+
+/*************** BOTONES DENTRO DE LA IMAGEN *******************/
+
+.main > section > .div-imagen > .btn-imagen > .btnSubir > a {
+    text-decoration: none;
+    color: #FFF;
+}
+.main > section > .div-imagen > .btn-imagen > .btnBuscar > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.main > section > .div-imagen > .btn-imagen {
+    /* width:100%; */
+    margin-top: 400px;
+    align-items: center;
+}
+
+
+.div-imagen > .btn-imagen > .btnBuscar {
+    /* background-color: rgb(244,134,58); */
+    background-color: red;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 265px;
+    margin-bottom: 40px;
+    /* margin-left: 25%; */
+    float: left;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+
+.div-imagen > .btn-imagen > .btnBuscar:hover{
+    background-color: rgba(237, 174, 131, 1);
+}
+
+
+.div-imagen > .btn-imagen > .btnSubir {
+    background-color: rgb(244,134,58);
+    font-weight: 700;
+    border-radius: 5px;
+    width: 265px;
+    margin-bottom: 40px;
+    float: right;
+    margin-right: 25%;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.div-imagen > .btn-imagen > .btnSubir:hover{
+    background-color: rgba(237, 174, 131, 1);
+}
+
+/* BOTON DE "BUSCAR UN MODELO" */
+.div-imagen > .btn-imagen > .btnBuscar > a > .img{
+    width: 60px;
+    padding: 7px;
+    float: left;
+    margin-left: 7px;
+}
+
+.div-imagen > .btn-imagen > .btnBuscar > a > .img > img {
+    filter: invert(100%);
+}
+
+.div-imagen > .btn-imagen > .btnBuscar > a > .text{
+    display: inline-table;
+    color: #FFF;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    padding: 7px;
+    margin-right: 40px;
+
+}
+
+
+/* BOTON DE "TENGO UN MODELO 3D" */
+.div-imagen > .btn-imagen > .btnSubir > a > .img{
+    width: 60px;
+    padding: 7px;
+    float: left;
+    margin-left: 7px;
+}
+
+.div-imagen > .btn-imagen > .btnSubir > a > .img > img {
+    filter: invert(100%);
+}
+
+.div-imagen > .btn-imagen > .btnSubir > a > .text{
+    display: inline-table;
+    color: #FFF;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    padding: 7px;
+    margin-right: 40px;
+
+}
+
+/*************************************************************/
+
+
+/******* Menu Entrega rapida, Devolucion, Contacto *******/
+
+section > .slider-bar{
+    background-color: rgb(244,134,58);
+    color: #FFF;
+    height: 80px;
+    margin: 0px;
+    /*height: 10vh;*/
+}
+
+section > .slider-bar > .slider-info > ul {
+    display: inline-block;
+    margin-top: 0px;
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section > .slider-bar > .slider-info > ul > li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    padding-left: 15px;
+    /*! border-left: 5px solid #353940; */
+    margin-left: 20px;
+
+    padding-right: 15px;
+    /*! border-right: 5px solid #353940; */
+    margin-right: 20px;
+}
+
+
+section > .slider-bar > .slider-info > ul > li > .cell-info > .cell-img{
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    line-height: 40px;
+    float: left;
+}
+
+section > .slider-bar > .slider-info > ul > li > .cell-info > .cell-content{
+    float: left;
+    margin-left: 15px;  
+}
+
+section > .slider-bar > .slider-info > ul > li > .cell-info > .cell-content> .cell-caption{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+}

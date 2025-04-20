@@ -1,0 +1,802 @@
+@font-face {
+    font-family: "SayaFY-Bold";
+    src: url('SayaFY-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: "Karla-Italic-VariableFont_wght";
+    src: url('Karla-Italic-VariableFont_wght.ttf')  format('truetype');
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+   /* height: 400vh;*/
+    font-family: "SayaFY-Bold";
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Cabecera que contiene logo y botones |acceder y compras| */
+nav {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: #f3f3f3;
+    /*Color de la cabecera donde esta situado el logo*/
+    background-color: rgba(55, 52, 63, 1);
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.8);*/
+    /*border-bottom: 1px solid rgb(200, 169, 126);*/
+
+}
+
+.nav-logoContainer {
+    position: relative;
+}
+
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .top-bar {
+    /*background-color: red;*/
+    position: absolute;
+    width: 22%;
+    height: 100%;
+}
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .left{
+    left: 0;
+    font-size: 16px;
+}
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .left > div > i{  
+    padding-top: 5%; 
+    padding-bottom: 5%;
+}
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .right{
+    right: 0;
+}
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .right > div{
+    position: absolute;
+    right: 0;
+}
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .right > div > ul > li > a{
+    font-size: 18px;
+    transition-duration: 0.5s;
+}
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .right > div > ul > li > a >i{
+    margin-top: 11%;
+    font-size: 20px;
+}
+
+nav > .nav-logo > .wrapper > .nav-logoContainer > .right > div > ul > li.item-2 > a:hover{
+    color: rgb(244,134,58);
+}
+nav > .nav-logo > .wrapper > .nav-logoContainer > .right > div > ul > li.item-1> a:hover{
+    color: rgb(244,134,58);
+}
+
+
+.lista-derecha{
+    display: flex;
+    flex-direction:  column;
+    align-content: flex-end;
+}
+
+.lista-derecha .item-1 {
+text-align: right;
+}
+
+
+
+/*Imagen de la cabecera*/
+.nav-logoContainer{
+    height:100%;
+    width:100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/*imagen del logo dentro de la cabecera*/
+.nav-logoContainer > a >img {
+    height: 100%;
+    width: 300px;
+    margin: 0px auto;
+    display: center;
+}
+
+
+
+.finalizar-compra{
+    text-align: center;
+}
+/********** FIN Cabecera que contiene logo y botones |acceder y compras| **********/
+
+
+
+
+/* Cabecera secundaria con botones de materiales, busqueda, guia de diseño*/
+.nav-secundario{
+    height: 80px;
+    /*Colores de la cabecera secundaria*/
+    background-color: rgba(38, 37, 43, 1);
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    color: #f3f3f3;
+}
+
+
+
+.nav-secundario > .menu-secundario > ul{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    /*align-items: center;
+    justify-content: space-around;*/
+    width: 100%;
+    color: #f3f3f3;
+}
+
+
+.nav-secundario > .menu-secundario > ul > li {
+    display: inline-block;
+    margin-top: 2.5%;
+    width: 33.33%;
+    /* padding: 15px 150px 15px 150px;*/
+
+}
+
+/*Posicionamento del texto en su lugar del menu secundario*/
+#menu-secundario-item2{   
+    text-align: center;
+}
+#menu-secundario-item3{
+    text-align: right;
+}
+
+.nav-secundario >.menu-secundario > ul > li > a{
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.5s;
+}
+
+
+.nav-secundario > .menu-secundario > ul > li > a:hover{
+    color: rgb(226,127,67);
+    transition: 0.4s;
+}
+/***********FIN Cabecera secundaria con botones de materiales, busqueda, guia de diseño****************/
+
+
+
+
+/* Div que contiene la imagen principal */
+.div-imagen{    
+    position: relative;
+    height: 67vh;
+    /*height: 550px;*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.div-imagen > img{
+
+    position: absolute;
+    margin-right: auto;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+    /*filter: grayscale(100%);*/
+    filter: brightness(40%);
+    z-index: 500;
+}
+
+
+.wrapper{
+
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin: 0 auto;
+    /*font-weight: 400;*/
+
+}
+
+
+/*************** FRASE DENTRO DE LA IMAGEN *******************/
+.div-imagen > .div-frase{
+    position: absolute;
+    top: 65px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    z-index: 600;
+    color: #f3f3f3;
+   /* background-color: red;*/
+}
+
+.div-imagen > .div-frase > .nombre-empresa{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 500;
+    margin-top: 40px;   
+}
+
+.div-imagen > .div-frase > .lema-empresa{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 30px;
+    font-family: "Karla-Italic-VariableFont_wght";   
+}
+
+.div-imagen > .div-frase > .frase-imagen{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 6px;
+    font-family: "Karla-Italic-VariableFont_wght";   
+}
+
+
+
+
+
+
+/*************** BOTONES DENTRO DE LA IMAGEN *******************/
+
+.main > section > .div-imagen > .btn-imagen > .btnSubir > a {
+    text-decoration: none;
+    color: #FFF;
+}
+.main > section > .div-imagen > .btn-imagen > .btnBuscar > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.main > section > .div-imagen > .btn-imagen {
+    /* width: 100%; */
+    margin-top: 400px;
+    align-items: center;
+    z-index: 600;
+}
+
+
+.div-imagen > .btn-imagen > .btnBuscar {
+    background-color: rgb(244,134,58);
+    /* background-color: red; */
+    font-weight: 700;
+    border-radius: 5px;
+    width: 265px;
+    margin-bottom: 40px;
+    /* margin-left: 25%; */
+    float: left;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+
+.div-imagen > .btn-imagen > .btnBuscar:hover{
+   /* background-color: rgba(237, 174, 131, 1);*/
+   background-color: brown;
+}
+
+
+.div-imagen > .btn-imagen > .btnSubir {
+    background-color: rgb(244,134,58);
+    font-weight: 700;
+    border-radius: 5px;
+    width: 265px;
+    margin-bottom: 40px;
+    float: right;
+    margin-right: 25%;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.div-imagen > .btn-imagen > .btnSubir:hover{
+    /*background-color: rgba(237, 174, 131, 1);*/
+    background-color: brown;
+}
+
+/* BOTON DE "BUSCAR UN MODELO" */
+.div-imagen > .btn-imagen > .btnBuscar > a > .img{
+    width: 60px;
+    padding: 7px;
+    float: left;
+    margin-left: 7px;
+}
+
+.div-imagen > .btn-imagen > .btnBuscar > a > .img > img {
+    filter: invert(100%);
+}
+
+.div-imagen > .btn-imagen > .btnBuscar > a > .text{
+    display: inline-table;
+    color: #FFF;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    padding: 7px;
+    margin-right: 40px;
+
+}
+
+
+/* BOTON DE "TENGO UN MODELO 3D" */
+.div-imagen > .btn-imagen > .btnSubir > a > .img{
+    width: 60px;
+    padding: 7px;
+    float: left;
+    margin-left: 7px;
+}
+
+.div-imagen > .btn-imagen > .btnSubir > a > .img > img {
+    filter: invert(100%);
+}
+
+.div-imagen > .btn-imagen > .btnSubir > a > .text{
+    display: inline-table;
+    color: #FFF;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    padding: 7px;
+    margin-right: 40px;
+
+}
+
+/*************************************************************/
+
+
+/******* Menu Entrega rapida, Devolucion, Contacto *******/
+
+ul, li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+section > .slider-bar{
+    background-color: rgb(244,134,58);
+    color: #FFF;
+    height: 80px;
+    margin: 0px;
+    /*height: 10vh;*/
+}
+
+section > .slider-bar > .slider-info > ul {
+    display: inline-block;
+    margin-top: 0px;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0;
+    padding-top: 2%;
+   
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: inline-block;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 100%;*/
+
+
+}
+
+
+
+section > .slider-bar > .slider-info > ul > li.col{  
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+    /*width: 33%;*/
+    
+}
+
+
+section > .slider-bar > .slider-info > ul > li.col-1{
+    display: inline-block;
+    margin: 0; 
+    
+}
+
+section > .slider-bar > .slider-info > ul > li.col-2{
+    display: inline-block;
+    margin: 0;
+    /*padding-left: 9%;*/   
+}
+
+section > .slider-bar > .slider-info > ul > li.col-3{
+    display: inline-block;
+    margin: 0;
+   /* padding-left: 18%;*/
+}
+
+
+
+section > .slider-bar > .slider-info > ul > li > .cell-info > .cell-img{
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    line-height: 40px;
+    float: left;
+}
+
+section > .slider-bar > .slider-info > ul > li > .cell-info > .cell-content{
+    float: left;
+    margin-left: 15px;  
+}
+
+section > .slider-bar > .slider-info > ul > li > .cell-info > .cell-content> .cell-caption{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+
+/*************************************************************/
+
+
+/****Explicacion de como funciona nuestra empresa con imagenes****/
+h2.title-steps{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 50;
+}
+
+h2.title-steps::before {
+    content: "";
+    position: absolute;  
+    top: 0;
+    height: 1px;
+    width: 41%;
+    border-top: 2px solid rgb(244,134,58);
+    margin-top: 1.7em;
+}
+
+/***************** ul que contiene la lista con los dibujos ******************/
+hr{
+    /*Color de naranja principal de la pagina*/
+    color: rgb(244,134,58);
+    border: 1px solid  rgb(244,134,58);
+}
+section{
+    padding: 2px 0;
+    background: #f3f3f3;
+}
+
+ section > .row-1 > .wrapper > ul.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 75%;
+    margin-top: 12vh;
+    
+    margin: auto;
+    /*background-color: red;*/
+}
+
+section > .row-1 > .wrapper > ul.steps > li{
+    width: 20%;
+    margin: 6%;
+    float: left; 
+    position: relative;
+}
+
+
+
+section > .row-1 > .wrapper > ul.steps > li.steps-order > .picture-step > .step-icon{
+    position: relative;
+    font-size: 40px;
+    padding-left: 125%;
+    margin-top: -15vh;
+}
+
+section > .row-1 > .wrapper > ul.steps > li.steps-order > .picture-step > img{
+    width: 100%;
+}
+
+section > .row-1 > .wrapper > ul.steps > li.steps-order > .text-steps{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15vh;
+    font-family: "Karla-Italic-VariableFont_wght";
+}
+
+
+
+/*;;;;;;;;;;;;;;;; Ocultamos las flechas de los dibujos 3 y 5 ;;;;;;;;;;;;;;;;*/
+section > .row-1 > .wrapper > ul.steps > li.step-5 > .picture-step > .step-icon{
+    visibility: hidden;
+}
+section > .row-1 > .wrapper > ul.steps > li.step-3 > .picture-step > .step-icon{
+    visibility: hidden;
+}
+/*;;;;;;;;;;;;;;;; Ocultamos las flechas de los dibujos 3 y 5 ;;;;;;;;;;;;;;;;*/
+
+
+section > .row-1 > .wrapper > ul.steps > li.step-4 > .picture-step >.step-icon{
+    padding-left: 140%;
+}
+
+
+section > .row-1 > .wrapper > ul.steps > li.step-4 {
+   margin-left: 20%;
+}
+section > .row-1 > .wrapper > ul.steps > li.step-5 {
+   margin-right: 20%;
+}
+
+
+
+/*Segunda lista que explica las ventajas y logros de la empresa*/
+section > .row-2 > .wrapper > .data-info{
+    margin-bottom: 8%;
+
+}
+
+
+section > .row-2 > .wrapper > .data-info > ul.table-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 70%;
+    margin-top: 13vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section > .row-2 > .wrapper > .data-info > ul.table-info > li{
+    width: 20%;
+    /*margin: 6%;*/ 
+    position: relative;
+}
+
+
+
+section > .row-2 > .wrapper > .data-info > ul.table-info > li >.data-img > img{
+    width: 100%;
+}
+
+section > .row-2 > .wrapper > .data-info > ul.table-info > li > .text-img {
+    font-family: "Karla-Italic-VariableFont_wght";
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2vh;
+}
+
+section > .row-2 > .wrapper > .data-info > ul.table-info > li > .text-img > p {
+    font-size: 30px;
+    margin-bottom: 1vh;
+    color: rgb(244,134,58); 
+}
+
+section > .row-2 > .wrapper > .data-info > .table-info-title{
+    font-family: "SayaFY-Bold";
+    text-align: center;
+    font-size: 25px;
+    margin-top: 3vh;
+}
+
+/*************************************************************/
+
+
+
+
+
+/***************** banner buscador encima del footer ******************/
+.wrapper > a {
+    color: black;
+} 
+
+.wrapper > a > .banner-buscador-general{
+    width: 100%;
+    height: 15vh;
+    margin-top: 8vh; 
+    background-image: url(../../images/lupa-con-teclado.png);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.wrapper > a > .banner-buscador-general > .texto-banner{
+    width: 62%;
+    float: left;
+    color: white;
+    text-align: right;
+    position: relative;
+    top: 28%;
+    font-size: 28px;
+    font-weight: 400;
+    /*-webkit-text-stroke: 1px rgb(244,134,58);*/
+}
+
+.wrapper > a > .banner-buscador-general > .separador{
+    position: relative;
+    width: 2px;
+    border: 1px solid #FFF;
+    height: 70%;
+    top: 15%;
+    margin: 0 40px;
+    float: left;
+}
+
+.wrapper > a > .banner-buscador-general > .button-banner{
+    width: auto;
+    float: left;
+    position: relative;
+    top: 38%;
+    transition-duration: .2s;
+
+}
+
+.wrapper > a > .banner-buscador-general > .button-banner > div{
+     font-family: "SayaFY-Bold";
+     display: inline-block;
+     color: #FFF;
+     background-color: rgb(244,134,58);
+     border: 1px solid #FFF;
+     padding: 10px 20px;
+     border-radius: 3px;
+     font-weight: 550;
+
+}
+
+/*************************************************************/
+
+
+
+
+/***************** footer de la pagina ******************/
+
+
+.footer{
+    background-color: rgba(38, 37, 43, 1);
+    color: #FFF;
+    font-size: 15px;
+    margin-top: 5vh; 
+}
+
+.footer > .footer-code > ul {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer > .footer-code > ul > li.row-1{
+    margin-left: 0;
+}
+
+.footer > .footer-code > ul > li {
+    width: 22%;
+    /*float: left;*/
+    margin-left: 4%;
+    padding: 0;
+    margin: 0;
+}
+
+.footer > .footer-code > ul > li > .footer-title{
+    font-size: 18px;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(244,134,58);
+    padding-bottom: 3%;
+    padding-bottom: 0;
+}
+
+.footer > .footer-code > ul > li > .footer-content > ul > li{
+    padding:7% 0;
+    padding-top: 0;
+}
+
+
+.footer > .footer-code > ul > li > .footer-content > ul.social > li > a > .social-image > i{
+    font-size: 30px;
+    transition-duration: 0.5s;
+}
+
+.footer > .footer-code > ul > li > .footer-content > ul.social > li > a > .social-image > i:hover{
+    color: rgb(244,134,58);
+    transition-duration: 0.5s;
+}
+
+
+.footer > .footer-code > ul > li > .footer-content > ul.social > li > a > .social-image{
+    display: inline-block;
+}
+
+.footer > .footer-code > ul > li > .footer-content > .social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.footer > .footer-code > ul > li > .footer-content > .social > li {
+    padding-right:25%; 
+}
+
+
+.copyright{
+    background-color: rgba(55, 52, 63, 1);
+    color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+/*************************************************************/
+
+/***********MENSAJE TOAST**************************************/
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*************************************************************/
+
+

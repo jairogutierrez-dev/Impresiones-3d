@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "SayaFY-Bold";
+    src: url('SayaFY-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: "Karla-Italic-VariableFont_wght";
+    src: url('Karla-Italic-VariableFont_wght.ttf')  format('truetype');
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+   /* height: 400vh;*/
+    font-family: "SayaFY-Bold";
+    font-weight: 400;
+}
+
+h3{
+	font-size: 2rem;
+}	
+.row-mat {
+
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 20px;
+}
+
+.table100 {
+    margin: 10px 0 30px;
+}
+
+table {
+    width: 100%;
+    background-color: #fff;
+}
+
+table, th, td {
+    border-right: 1px solid #e1e1e1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table100.ver1 th {
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #25262B;
+}
+.row100.head th {
+    padding: 8px;
+    font-weight: 700;
+}
+
+tbody tr.row100 {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.table100.ver1 td {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+    text-align: center;
+}
+.row100 td.column8 {
+    font-size: 18px!important;
+    background-color: rgb(244,134,58);
+    color: #fff!important;
+    border-left: 1px solid #e1e1e1;
+}
+.row100 td {
+    padding: 15px;
+}
+.row100 td {
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+th, td {
+    font-weight: unset;
+}
+table, th, td {
+    border-right: 1px solid #e1e1e1;
+}
+
+.table100.ver1 td {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+    text-align: center;
+}
+.row100 td.column3 {
+    font-size: 14px!important;
+}
+.row100 td {
+    padding: 15px;
+}
+.row100 td {
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+th, td {
+    font-weight: unset;
+}
+table, th, td {
+    border-right: 1px solid #e1e1e1;
+}
+
+tbody tr.row100 {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.row100 td i {
+    padding: 3px;
+}
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.fa, .fas, .far, .fal, .fad, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}

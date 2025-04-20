@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "SayaFY-Bold";
+    src: url('SayaFY-Bold.ttf')  format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "SayaFY-Bold";
+    font-weight: 400;
+}
+
+
+/*Formulario de rellenar la tarjeta de credito*/
+.container{
+	/*background-color: red;*/
+	position: relative;
+	width: 100%;
+	/*background-color: #fff;*/
+	min-height: 57vh;
+	overflow: hidden;
+	margin-top: 6vh;
+}
+
+.forms-container{
+	/*background-color: blue;*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title{
+	font-family: "SayaFY-Bold";
+	font-size: 2.2rem;
+	color: #000;
+	margin-bottom: 3%;
+	font-weight: 600;
+}
+form p{
+	font-size: 1.1rem;
+}
+
+.input-field{
+	max-width: 380px;
+	width: 100%;
+	height: 55px;
+	background-color: #f0f0f0;
+	margin: 10px 0;
+	border-radius: 20px;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	padding: 0 0.4rem;
+	position: relative;
+}
+
+.input-field i {
+	text-align: center;
+	line-height: 55px;
+	color: #acacac;
+	font-size: 1.3rem;
+}
+
+.input-field input{
+	background: none;
+	outline: none;
+	border:none;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 1rem;
+	color: #333;
+}
+
+.input-field input:placeholder-shown{
+	color: #aaa;
+	font-weight: 550;
+}
+
+.btn{
+	font-family: "SayaFY-Bold";
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	background-color: rgb(244,134,58);
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	transition: all 0.5s;
+}
+
+.btn:hover{
+	background-color: rgb(212,104,28);
+}
+
+.btn-container{
+	margin-top: 2%;
+}
+
+.btn-container input{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/******************************************************/
+
+
+/*********Estilos de formulario de fecha tarjeta*******/
+.expiracion-contenedor{
+	/*background-color: red;*/
+	width: 33%;
+	margin-top: 10px;
+	max-width: 380px;
+	width: 100%;
+}
+
+.flexbox{
+	/*background-color: blue;*/
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7px;
+}
+
+#selectMes, #selectYear{
+	border-radius: 5px;
+	width: 100%;
+	padding: 10px;
+}
+
+
+.grupo-select{
+	width: 20%;
+	height: 30px;
+}
+
+
+#inputCCV{
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.grupo-expira{
+	font-size: 1.2rem;
+}
+
+
+
+
+.ccv{
+	max-width: 50%;
+	width: 100%;
+	height:40px;
+	background-color: #f0f0f0;
+	border-radius: 20px;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	padding: 0 0.4rem;
+	position: relative;
+}
+
+
+
+.ccv input{
+	background: none;
+	outline: none;
+	border:none;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 1rem;
+	color: #333;
+}
+
+.ccv label{
+	margin-top: 10px;
+	font-size: 1rem;
+	color: #acacac;
+}

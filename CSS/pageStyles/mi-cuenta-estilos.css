@@ -1,0 +1,105 @@
+.main > .tabla-pedidos .containertable{
+    counter-reset: my-sec-counter;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 80px auto;
+    box-shadow: 0 0 5px #f0f0f0;
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-auto-rows: 50px;
+    border-radius: 15px;
+
+}
+span::before{
+    counter-increment: my-sec-counter;
+    content: "" counter(my-sec-counter) ;
+}
+
+.main >.tabla-pedidos .containertable >.tabletitle{
+    grid-column-start: 1;
+    grid-column-end:6;
+    background-color: rgb(244,134,58);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.main >.tabla-pedidos .containertable >.tableheader , .tableitem{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.main >.tabla-pedidos .containertable >.tableheader{
+    font-weight: bold;
+    font-size: 1em;
+
+}
+.main >.tabla-pedidos .containertable > .tableitem{
+    padding: 10px;
+    font-size: 1em;
+}
+
+
+.tableitem .btn-informacion {
+    font-family: "Karla-Italic-VariableFont_wght";
+   font-weight: bold;
+   font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(255, 157, 10);
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+/*estilos de los botones de mi cuenta*/
+h3{
+    font-size: 1.85rem;
+}
+
+.pedidos{
+     margin-top: 7vh;
+    font-size: 1.3rem;
+    
+}
+.pedidos > a{
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.pedidos a:hover{
+    color:  rgb(244,134,58);
+    transition-duration: 0.3s;
+}
+
+.cerrar-sesion{
+    font-size: 1.2rem;
+    margin-top: 5vh;
+}
+
+.cerrar-sesion a{
+    color: black;
+    transition-duration: 0.3s;
+}
+.cerrar-sesion a:hover{
+    color:  rgb(244,134,58);
+    transition-duration: 0.3s;
+}
+
+.atras a{
+    color: black;
+    font-size: 2rem;
+    transition-duration: 0.3s; 
+}
+
+.atras a:hover{
+    color:  rgb(244,134,58);
+    transition-duration: 0.3s;
+}
